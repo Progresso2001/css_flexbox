@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+    <style>
+        div.container{
+            background-color: lightsalmon;
+            height: 400px;
+            display: flex;
+           /* Usando direções e eixos flexbox */
+           /* flex-direction: row-reverse; */
+           /* flex-direction: column; */
+           /* flex-direction: column-reverse; */
+           /* usando o flex-wrap para empacotamnto e fluxo no flexbox */
+           /* flex-direction: row; */
+           /* flex-wrap: wrap; */
+           /* flex-wrap: wrap-reverse; */
+           /* flex-flow: row nowrap; */
+            /* Alinhamento nos eixos flexbox */
+            /* flex-flow: row nowrap;
+            /* centralização absoluta com flexbox */
+            /* justify-content: space-around;
+            align-items:center; */
+            /* Alinhamento de elementos empacotados no Flexbox usando align-content */
+           
+            flex-flow: row wrap ;
+            align-content: space-between;
+
+            /* Anatomia dos itens Flexbox usando o order */
+          
+        }
+        div.item{
+            background-color: lightskyblue;
+            border: 1px solid black;
+            text-align: center;
+            /* flex: auto; */
+            /* padding: 10px; */
+            
+            padding: 40px;
+           
+        }
+    </style>
+</head>
+<body>
+    <!-- criando direções e eixos flexboxes -->
+    <div class="container">
+        <div class="item">Exemlpo de bloco A</div>
+        <div class="item">Exemlpo de bloco B</div>
+        <div class="item">Exemlpo de bloco C</div>
+        <div class="item">Exemlpo de bloco D</div>
+        <div class="item">Exemlpo de bloco E</div>
+        <div class="item">Exemlpo de bloco F</div>
+        <div class="item">Exemlpo de bloco G</div>
+    </div>
+    
+</body>
+</html>

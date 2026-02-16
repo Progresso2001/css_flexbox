@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+    <style>
+        /* Propriedade flex-basis em Flexbox  */
+        div.container{
+            background-color: lightsalmon;
+            display: flex;
+          
+            flex-flow: row nowrap ;
+        }
+        div.item{
+            background-color: lightskyblue;
+            border: 1px solid black;
+            text-align: center;
+            flex-basis: 250px;   
+           /* Controle do tamanho de itens flexíveis usando flex-shrink */
+           flex-shrink: 1;
+           flex-grow: 1;
+        }
+    </style>
+</head>
+<body>
+    <!-- criando direções e eixos flexboxes -->
+    <div class="container">
+        <div class="item"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex tempore, blanditiis non, deleniti voluptatibus qui cum delectus ipsa accusamus quidem autem maxime voluptates dolorem laborum. Deleniti porro soluta veritatis eos?</div>
+        <div class="item"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium ab voluptas labore dignissimos? Aut consequatur aspernatur deserunt soluta cumque, suscipit facere. Eius repudiandae ea ullam veniam nobis asperiores, delectus cum?</div>
+        <div class="item"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita similique ut quia distinctio dignissimos voluptatibus eum cumque laudantium, odio corporis eos at autem necessitatibus eveniet illo ab debitis accusantium praesentium?
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perferendis accusamus natus facere, mollitia eos eaque minus iure cumque est accusantium consequuntur, laboriosam quo praesentium dolore corporis commodi illo odit cum?
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam magni dignissimos soluta ipsa quaerat eaque maiores autem eveniet fugit, aperiam qui quam accusamus harum neque, optio consequuntur nobis ipsum odio!
+        </div>
+        
+
+    </div>
+    
+</body>
+</html>

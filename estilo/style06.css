@@ -1,0 +1,83 @@
+@charset "utf-8";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #686565;
+    width: 100vw;
+    height: 100vh;
+    font-size: 1em;
+    font-family: 'Courier New', Courier, monospace;
+}
+header{
+    background-color: white;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header img{
+    width: 80px;
+}
+header h1{
+    font-weight: 600;
+    flex: 0 0 200px;
+    text-shadow:  2px 2px 0px rgba(0,0,0,0.404);
+}
+header h1 span{
+    color: aqua;
+}
+header nav{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-end;
+}
+header a{
+    background-color:#585555;
+    border: 1px dotted black;
+    color: white;
+    font-weight: 600;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 10px;
+    text-decoration: none;
+    text-align: center;
+   
+
+}
+header a:hover{
+    background-color: aqua;
+    transition: background-colo .5s;
+}
+main{
+    background-color: rgb(43, 42, 42);
+    color: white;
+    margin: 10px;
+    box-shadow: 2px 2px 3px rgba(0,0,0,0.336);
+    border-radius: 10px;
+}
+main h2{
+    text-align: center;
+}
+main p{
+    margin: 10px;
+    padding: 10px;
+    text-indent: 10px;
+}
+
+@media screen and (max-width:768px){
+    header, header nav{
+        flex-flow: column nowrap;
+    }
+    header h1{
+        flex-basis: 50px;
+    }
+    header nav, a{
+        width: 90vw;
+    }
+    
+}
+

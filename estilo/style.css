@@ -39,7 +39,7 @@ header nav{
     flex-flow: row wrap;
     justify-content: flex-end;
 }
-header nav, a{
+header a{
     background-color: black;
     color: white;
     padding: 5px;
@@ -49,7 +49,7 @@ header nav, a{
     text-align: center;
     margin-bottom: 10px;
 }
-header nav, a:hover{
+header a:hover{
     background-color: white;
     color: black;
     transition: background-color .5s;

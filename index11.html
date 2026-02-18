@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid layout</title>
+    <style>
+
+        /* Usando as propriedades do container do gri layout*/
+        .container{
+            height: 400px;
+            border: 2px solid #333;
+            display: grid;
+            grid-template-columns: auto auto auto;
+            grid-template-rows: 100px 100px 100px;
+            grid-auto-rows:100px ;
+            grid-auto-columns: 100px;
+            
+    
+        }
+        #item1{
+            background-color: red;
+            text-align: center;
+
+        }
+         #item2{
+            background-color: blue;
+              text-align: center;
+            
+        }
+         #item3{
+            background-color: orange;
+              text-align: center;
+            
+        }
+         #item4{
+            background-color: green;
+              text-align: center;
+            
+        }
+         #item5{
+            background-color:purple;
+              text-align: center;
+            
+        }
+         #item6{
+            background-color:blueviolet;
+              text-align: center;
+         }
+         #item7{
+            background-color: brown;
+            text-align: center;
+            
+        }
+
+    </style>
+</head>
+<body>
+    <!-- Estudar anatomia e propriedades grid -->
+     <div class="container">
+        <div id="item1"> Teste A</div>
+        <div id="item2"> Teste B</div>
+        <div id="item3"> Teste C</div>
+        <div id="item4"> Teste D</div>
+        <div id="item5"> Teste E</div>
+        <div id="item6"> Teste F</div>
+        <div id="item7"> Teste G</div>
+     </div>
+</body>
+</html>
